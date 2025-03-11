@@ -10,7 +10,7 @@ os.environ['GOOGLE_CLOUD_PROJECT'] = 'genail300'
 # Function to make an API call to Google Imagen
 def imagen_call(prompt, input_file="original_image.png"):
     project_id = "genail300"
-    output_file = "./images/generated_image.png"  # Output image file name
+    output_file = "./generated_image.png"  # Output image file name
 
     # Initialize Vertex AI with the project ID and location
     vertexai.init(project=project_id, location="us-central1")
