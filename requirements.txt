@@ -20,3 +20,5 @@ segment-anything
 streamlit-drawable-canvas 
 vertexai 
 torchvision
+python-dotenv
+PyJWT==2.8.0
