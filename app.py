@@ -40,7 +40,7 @@ def app():
                 st.session_state.image_generated = False
                 st.session_state.retry_clicked = False
                 with st.spinner("Generating image..."): 
-                    image_path = "./images/uploaded_image.png"
+                    image_path = "./uploaded_image.png"
                     image.save(image_path) 
 
                     try:
@@ -48,7 +48,7 @@ def app():
                             st.session_state.image_generated = True  # Mark image as generated
                                 # Display Generated Image with Dynamic Scaling
                             st.write("Generated Image:")
-                            generated_image = Image.open("./images/generated_image.png")
+                            generated_image = Image.open("./generated_image.png")
                             st.image(generated_image, caption="Generated Image", use_column_width=True)
                     except Exception as e:
                             st.error(f"An error occurred during image generation: {e}")
@@ -59,7 +59,7 @@ def app():
 
         if st.session_state.retry_clicked:
                 with st.spinner("Generating new image..."): 
-                    image_path = "./images/uploaded_image.png"
+                    image_path = "./uploaded_image.png"
                     image.save(image_path) 
 
                     try:
@@ -67,7 +67,7 @@ def app():
 
                                 # Display Generated Image with Dynamic Scaling
                             st.write("Generated Image:")
-                            generated_image = Image.open("./images/generated_image.png")
+                            generated_image = Image.open("./generated_image.png")
                             st.image(generated_image, caption="Generated Image", use_column_width=True)
                     except Exception as e:
                             st.error(f"An error occurred during image generation: {e}")
