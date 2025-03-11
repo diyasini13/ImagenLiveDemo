@@ -1,8 +1,6 @@
 import streamlit as st
 import numpy as np
 from PIL import Image, ImageOps
-import torch
-import cv2
 from streamlit_drawable_canvas import st_canvas
 from imagen_api_call import imagen_call  # Import the imagen_call function
 import auth_token
