@@ -10,8 +10,10 @@ COPY requirements.txt .
 # Install system dependencies (including OpenGL)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libgl1-mesa-glx \
-    libglib2.0-0 \
-    && rm -rf /var/lib/apt/lists/*
+    libglib2.0-0 
+# && rm -rf /var/lib/apt/lists/* 
+
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 # Install any dependencies
 RUN pip install --no-cache-dir -r requirements.txt
