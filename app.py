@@ -15,7 +15,7 @@ def app():
 
 
     # Streamlit app layout
-    st.title("Segment Anything (Meta) with Google Imagen")
+    st.title("Edit images with Google Imagen")
 
     st.write("Upload an image, mark a region, and then generate a new image.")
 
