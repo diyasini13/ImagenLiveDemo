@@ -14,11 +14,9 @@
 streamlit
 numpy 
 pillow 
-torch 
 opencv-python 
 segment-anything 
 streamlit-drawable-canvas 
 vertexai 
-torchvision
-python-dotenv
+python-dotenv==1.0.1
 PyJWT==2.8.0
