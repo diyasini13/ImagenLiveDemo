@@ -4,8 +4,8 @@ import os
 import random
 
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'path/to/JSON/key'
-os.environ['GOOGLE_CLOUD_PROJECT'] = 'genail300'
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'path/to/JSON/key'
+# os.environ['GOOGLE_CLOUD_PROJECT'] = 'genail300'
 
 # Function to make an API call to Google Imagen
 def imagen_call(prompt, input_file="original_image.png"):
