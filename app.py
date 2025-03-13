@@ -28,7 +28,7 @@ def app():
         image = Image.open(uploaded_file)
 
         # Display Original Image with Dynamic Scaling
-        st.image(image, caption="Original Image", use_column_width=True)
+        st.image(image, caption="Original Image")
 
         prompt = st.text_input("Enter the prompt for the image generation:")
 
@@ -47,7 +47,7 @@ def app():
                                 # Display Generated Image with Dynamic Scaling
                             st.write("Generated Image:")
                             generated_image = Image.open("./generated_image.png")
-                            st.image(generated_image, caption="Generated Image", use_column_width=True)
+                            st.image(generated_image, caption="Generated Image")
                     except Exception as e:
                             st.error(f"An error occurred during image generation: {e}")
 
@@ -66,7 +66,7 @@ def app():
                                 # Display Generated Image with Dynamic Scaling
                             st.write("Generated Image:")
                             generated_image = Image.open("./generated_image.png")
-                            st.image(generated_image, caption="Generated Image", use_column_width=True)
+                            st.image(generated_image, caption="Generated Image")
                     except Exception as e:
                             st.error(f"An error occurred during image generation: {e}")
 

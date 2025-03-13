@@ -9,7 +9,7 @@ import random
 
 # Function to make an API call to Google Imagen
 def imagen_call(prompt, input_file="original_image.png"):
-    project_id = "heroprojectlivedemo"
+    project_id = "hero-holder"
     output_file = "./generated_image.png"  # Output image file name
 
     # Initialize Vertex AI with the project ID and location
