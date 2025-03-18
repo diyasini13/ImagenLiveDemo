@@ -16,7 +16,7 @@ def imagen_call(prompt, input_file="original_image.png"):
     vertexai.init(project=project_id, location="us-central1")
 
     # Load the pretrained ImageGenerationModel
-    model = ImageGenerationModel.from_pretrained("imagen-3.0-generate-002")
+    model = ImageGenerationModel.from_pretrained("imagegeneration@006")
     
     # Load the original image and the mask image
     base_img = Image.load_from_file(location=input_file)
